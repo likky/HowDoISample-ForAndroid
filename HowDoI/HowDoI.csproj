@@ -1,0 +1,466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C259316-61A1-4547-852B-9A9462E14F80}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSHowDoISamples</RootNamespace>
+    <AssemblyName>CSHowDoISamples</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
+    <MandroidI18n />
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidStoreUncompressedFileExtensions />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidStoreUncompressedFileExtensions></AndroidStoreUncompressedFileExtensions>
+    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+    <JavaOptions></JavaOptions>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-GeoAPI.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GeoAPI.Bootstrapper.NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\GeoAPI.Bootstrapper.NetTopologySuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="NetTopologySuite, Version=1.14.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\NetTopologySuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PowerCollections, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2573bf8a1bdddcd5, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteDependency-NetTopologySuite.10.0.0\lib\portable-net403+sl5+netcore45+wpa81+wp8+MonoAndroid10+XamariniOS10+MonoTouch10\PowerCollections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Android, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MapSuiteMobileForAndroid-BareBone.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Background, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Background.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.Background.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.GeoTiff, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.GeoTiff.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.GeoTiff.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Gpx, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Gpx.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.Gpx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Heat, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Heat.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.Heat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.NativeImage, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.NativeImage.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.NativeImage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Tab, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.Tab.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.TinyGeo, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.TinyGeo.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Layers.TinyGeo.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.ClassBreak, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.ClassBreak.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.ClassBreak.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Regex, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Regex.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Regex.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.Value, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Value.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Value.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Source\AddAMarker.cs" />
+    <AndroidAsset Include="Assets\Source\AddAPopup.cs" />
+    <AndroidAsset Include="Assets\Source\AddATouchEventOnMap.cs" />
+    <AndroidAsset Include="Assets\Source\AddATouchEventOnMarker.cs" />
+    <AndroidAsset Include="Assets\Source\DisplayASimpleMap.cs" />
+    <AndroidAsset Include="Assets\Source\FindFeatureTouched.cs" />
+    <AndroidAsset Include="Assets\Source\AddVariousMapTools.cs" />
+    <AndroidAsset Include="Assets\Source\AreaOfAFeature.cs" />
+    <AndroidAsset Include="Assets\Source\BufferAFeature.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\ChangeEditSettings.cs" />
+    <AndroidAsset Include="Assets\Source\ConvertToFromWellKnownBinary.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\CreateAnInMemoryFeatureLayer.cs" />
+    <AndroidAsset Include="Assets\Source\DrawAFeatureBasedOnAValue.cs" />
+    <AndroidAsset Include="Assets\Source\DrawAndEditShapes.cs" />
+    <AndroidAsset Include="Assets\Source\DrawFeaturesBasedOnRegularExpression.cs" />
+    <AndroidAsset Include="Assets\Source\DrawThematicFeatures.cs" />
+    <AndroidAsset Include="Assets\Source\EditFeaturesFromAFeatureLayer.cs" />
+    <AndroidAsset Include="Assets\Source\EnvelopeOfAFeature.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\ExtentAndScaleChangeEvents.cs" />
+    <AndroidAsset Include="Assets\Source\FindById.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\FindTheDifferenceOfTwoFeatures.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\FindWorldCoordinatesWhereTouched.cs" />
+    <AndroidAsset Include="Assets\Source\GetDistanceBetweenTwoFeatures.cs" />
+    <AndroidAsset Include="Assets\Source\LengthOfAFeature.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\LoadAGdiPlusRasterLayer.cs" />
+    <AndroidAsset Include="Assets\Source\LoadAGeoTiffRasterLayer.cs" />
+    <AndroidAsset Include="Assets\Source\LoadAGpxFeatureLayer.cs" />
+    <AndroidAsset Include="Assets\Source\LoadAHeatLayer.cs" />
+    <AndroidAsset Include="Assets\Source\LoadAHeatMapLayer.cs" />
+    <AndroidAsset Include="Assets\Source\LoadAShapeFileFeatureLayer.cs" />
+    <AndroidAsset Include="Assets\Source\LoadATabFeatureLayer.cs" />
+    <AndroidAsset Include="Assets\Source\LoadATinyGeoFeatureLayer.cs" />
+    <AndroidAsset Include="Assets\Source\ScaleFeatureUpAndDown.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\ScreenCoordinatesToWorldCoordinates.cs" />
+    <AndroidAsset Include="Assets\Source\ShortestLineBetweenFeatures.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\SpatialQueryAFeatureLayer.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\UseWMSOverlay.cs" />
+    <AndroidAsset Include="Assets\Source\UsingGoogle900913projection.cs" />
+    <AndroidAsset Include="Assets\Source\WorldCoordinatesToScreenCoordinates.cs" />
+    <AndroidAsset Include="Assets\Source\ZoomInToAFeatureTouched.cs" />
+    <AndroidAsset Include="Assets\Source\ZoomIntoFeatures.cs">
+      <SubType></SubType>
+    </AndroidAsset>
+    <AndroidAsset Include="Assets\Source\ZoomToAScale.cs" />
+    <AndroidAsset Include="Assets\Source\UseBingMapsOverlay.cs" />
+    <AndroidAsset Include="Assets\Source\UseGoogleMapsOverlay.cs" />
+    <AndroidAsset Include="Assets\Source\UseOpenStreetMapOverlay.cs" />
+    <Compile Include="Coordinates\FindWorldCoordinatesWhereTouched.cs" />
+    <Compile Include="Coordinates\GetDistanceBetweenTwoFeatures.cs" />
+    <Compile Include="Coordinates\ScreenCoordinatesToWorldCoordinates.cs" />
+    <Compile Include="Coordinates\WorldCoordinatesToScreenCoordinates.cs" />
+    <Compile Include="Data Providers\CreateAnInMemoryFeatureLayer.cs" />
+    <Compile Include="Data Providers\LoadAHeatLayer.cs" />
+    <Compile Include="Editing Feature Layers\EditFeaturesFromAFeatureLayer.cs" />
+    <Compile Include="Features\AreaOfAFeature.cs" />
+    <Compile Include="Features\BufferAFeature.cs" />
+    <Compile Include="Features\ConvertToFromWellKnownBinary.cs" />
+    <Compile Include="Features\EnvelopeOfAFeature.cs" />
+    <Compile Include="Features\FindById.cs" />
+    <Compile Include="Features\FindTheDifferenceOfTwoFeatures.cs" />
+    <Compile Include="Features\LengthOfAFeature.cs" />
+    <Compile Include="Features\ScaleFeatureUpAndDown.cs" />
+    <Compile Include="Features\ShortestLineBetweenFeatures.cs" />
+    <Compile Include="Features\SpatialQueryAFeatureLayer.cs" />
+    <Compile Include="Features\ZoomIntoFeatures.cs" />
+    <Compile Include="Getting Started\AddAMarker.cs" />
+    <Compile Include="Getting Started\AddAPopup.cs" />
+    <Compile Include="Getting Started\AddATouchEventOnMap.cs" />
+    <Compile Include="Getting Started\AddATouchEventOnMarker.cs" />
+    <Compile Include="Getting Started\AddVariousMapTools.cs" />
+    <Compile Include="Getting Started\DisplayASimpleMap.cs" />
+    <Compile Include="Getting Started\FindFeatureTouched.cs" />
+    <Compile Include="Moving Around Map\ExtentAndScaleChangeEvents.cs" />
+    <Compile Include="Moving Around Map\ZoomInToAFeatureTouched.cs" />
+    <Compile Include="Moving Around Map\ZoomToAScale.cs" />
+    <Compile Include="Overlays and layers\LoadAGdiPlusRasterLayer.cs" />
+    <Compile Include="Overlays and layers\LoadAGeoTiffRasterLayer.cs" />
+    <Compile Include="Overlays and layers\LoadAGpxFeatureLayer.cs" />
+    <Compile Include="Overlays and layers\LoadAHeatMapLayer.cs" />
+    <Compile Include="Overlays and layers\LoadAShapeFileFeatureLayer.cs" />
+    <Compile Include="Overlays and layers\LoadATabFeatureLayer.cs" />
+    <Compile Include="Overlays and layers\LoadATinyGeoFeatureLayer.cs" />
+    <Compile Include="Overlays and layers\UseBingMapsOverlay.cs" />
+    <Compile Include="Overlays and layers\UseGoogleMapsOverlay.cs" />
+    <Compile Include="Overlays and layers\UseOpenStreetMapOverlay.cs" />
+    <Compile Include="Overlays and layers\UseWMSOverlay.cs" />
+    <Compile Include="Projection\UsingGoogle900913projection.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleActivity.cs" />
+    <Compile Include="SampleHelper.cs" />
+    <Compile Include="SampleViewHelper.cs" />
+    <Compile Include="Shapes\ChangeEditSettings.cs" />
+    <Compile Include="Shapes\DrawAndEditShapes.cs" />
+    <Compile Include="SplashActivity.cs" />
+    <Compile Include="Styles\DrawAFeatureBasedOnAValue.cs" />
+    <Compile Include="Styles\DrawFeaturesBasedOnRegularExpression.cs" />
+    <Compile Include="Styles\DrawThematicFeatures.cs" />
+    <Compile Include="TreeActivity.cs" />
+    <Compile Include="TreeNode.cs" />
+    <Compile Include="TreeDataSourceAdapter.cs" />
+    <Compile Include="WebViewActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\SampleList.xml" />
+    <AndroidAsset Include="Assets\SyntaxHighlighter\shBrushCSharp.js" />
+    <AndroidAsset Include="Assets\SyntaxHighlighter\shBrushXml.js" />
+    <AndroidAsset Include="Assets\SyntaxHighlighter\shCore.js" />
+    <AndroidAsset Include="Assets\SyntaxHighlighter\SyntaxHighlighter.css" />
+    <AndroidAsset Include="Assets\SyntaxHighlighter\SourceCode\DisplayASimpleMap.html" />
+    <AndroidAsset Include="Assets\AppData\Gif\EWX_N0R_0.gif" />
+    <AndroidAsset Include="Assets\AppData\Tiff\World.tif" />
+    <Content Include="Properties\AndroidManifest.xml" />
+    <AndroidResource Include="Resources\drawable\Circle.png" />
+    <AndroidResource Include="Resources\drawable\Clear.png" />
+    <AndroidResource Include="Resources\drawable\Cursor.png" />
+    <AndroidResource Include="Resources\drawable\Edit.png" />
+    <AndroidResource Include="Resources\drawable\Ellipse.png" />
+    <AndroidResource Include="Resources\drawable\Expand.png" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Line.png" />
+    <AndroidResource Include="Resources\drawable\linearlayoutshape.xml" />
+    <AndroidResource Include="Resources\drawable\Pin.png" />
+    <AndroidResource Include="Resources\drawable\Point.png" />
+    <AndroidResource Include="Resources\drawable\Polygon.png" />
+    <AndroidResource Include="Resources\drawable\Rectangle.png" />
+    <AndroidResource Include="Resources\drawable\save.png" />
+    <AndroidResource Include="Resources\drawable\Square.png" />
+    <AndroidResource Include="Resources\layout\Instruction.xml" />
+    <AndroidResource Include="Resources\menu\ActionBarMenu.xml" />
+    <AndroidResource Include="Resources\drawable\Draw.png" />
+    <AndroidResource Include="Resources\drawable\buttonbackground.xml" />
+    <AndroidResource Include="Resources\drawable\buttonselectedbackground.xml" />
+    <AndroidResource Include="Resources\drawable\ThinkGeoLogo.png" />
+    <AndroidResource Include="Resources\drawable\Notice.png" />
+    <AndroidResource Include="Resources\drawable\MapSuite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tree.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\WebView.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\Frisco.tgeo" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA20.dbf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA20.ids" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA20.idx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA20.shp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA20.shx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA40.dbf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA40.ids" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA40.idx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA40.shp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXlkaA40.shx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXwat.dbf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXwat.ids" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXwat.idx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXwat.prj" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXwat.shp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Frisco\TXwat.shx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Gif\EWX_N0R_0.gfw" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Gpx\afoxboro.gpx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Gpx\ashland.gpx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Gpx\blue_hills.gpx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Gpx\fells_loop.gpx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Gpx\mystic_basin_trail.gpx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\cities_e.dbf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\cities_e.ids" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\cities_e.idx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\cities_e.shp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\cities_e.shx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\Countries02.dbf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\Countries02.ids" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\Countries02.idx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\Countries02.shp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\Countries02.shx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\states.dbf" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\states.ids" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\states.idx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\states.shp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\SampleData\states.shx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Tab\HoustonMuniBdySamp_Boundary.dat" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Tab\HoustonMuniBdySamp_Boundary.id" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Tab\HoustonMuniBdySamp_Boundary.ids" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Tab\HoustonMuniBdySamp_Boundary.idx" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Tab\HoustonMuniBdySamp_Boundary.ind" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Tab\HoustonMuniBdySamp_Boundary.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Tab\HoustonMuniBdySamp_Boundary.tab" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\AppData\Tiff\World.tfw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\AppData\Frisco\Frisco\" />
+    <Folder Include="Assets\AppData\Gif\Gif\" />
+    <Folder Include="Assets\AppData\Gpx\Gpx\" />
+    <Folder Include="Assets\AppData\Tab\Tab\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SplashLayout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\DisplayMapView.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.10.0.0\build\Mono\ThinkGeo.MapSuite.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.10.0.0\build\Mono\ThinkGeo.MapSuite.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild"></Target>
+  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.InMemory.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.InMemory.targets')" />
+  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.IsoLine.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.IsoLine.targets')" />
+  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Tab.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Tab.targets')" />
+  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.Noaa.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Noaa.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.Noaa.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Noaa.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
