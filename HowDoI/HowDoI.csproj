@@ -130,6 +130,10 @@
       <HintPath>..\packages\ThinkGeo.MapSuite.Styles.Value.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.Value.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Styles.WorldStreets, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Styles.WorldStreets.10.0.0\lib\MonoAndroid\ThinkGeo.MapSuite.Styles.WorldStreets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Source\AddAMarker.cs" />
