@@ -28,7 +28,7 @@ namespace CSHowDoISamples
             classBreakStyle.ClassBreaks.Add(new ClassBreak(23898734, AreaStyles.CreateSimpleAreaStyle(GeoColor.StandardColors.Red)));
 
             ShapeFileFeatureLayer statesLayer = new ShapeFileFeatureLayer(SampleHelper.GetDataPath(@"SampleData/states.shp"));
-            statesLayer.ZoomLevelSet.ZoomLevel01.CustomStyles.Add(AreaStyles.Country1);
+            statesLayer.ZoomLevelSet.ZoomLevel01.CustomStyles.Add(AreaStyles.CreateSimpleAreaStyle(GeoColor.FromArgb(255, 233, 232, 214), GeoColor.FromArgb(255, 118, 138, 69)));
             statesLayer.ZoomLevelSet.ZoomLevel01.CustomStyles.Add(classBreakStyle);
             statesLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
 

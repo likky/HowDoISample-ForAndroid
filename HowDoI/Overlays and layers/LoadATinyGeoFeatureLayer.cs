@@ -20,10 +20,10 @@ namespace CSHowDoISamples
             SetContentView(Resource.Layout.DisplayMapView);
 
             TinyGeoFeatureLayer tinyGeoFeatureLayer = new TinyGeoFeatureLayer(SampleHelper.GetDataPath(@"Frisco/Frisco.tgeo"));
-            tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel11.DefaultLineStyle = LineStyles.LocalRoad4;
+            tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel11.DefaultLineStyle = LineStyles.CreateSimpleLineStyle(GeoColor.StandardColors.DarkGray, 1F, false);
             tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel11.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level14;
-            tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel15.DefaultLineStyle = LineStyles.LocalRoad3;
-            tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel16.DefaultLineStyle = LineStyles.LocalRoad2;
+            tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel15.DefaultLineStyle = LineStyles.CreateSimpleLineStyle(GeoColor.StandardColors.White, 3F, GeoColor.StandardColors.DarkGray, 5F, true);
+            tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel16.DefaultLineStyle = LineStyles.CreateSimpleLineStyle(GeoColor.StandardColors.White, 8F, GeoColor.StandardColors.DarkGray, 10F, true);
             tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel16.DefaultTextStyle = TextStyles.CreateSimpleTextStyle("[fedirp] [fename] [fetype] [fedirs]", "Arial", 10f, DrawingFontStyles.Regular, GeoColor.StandardColors.Black, 0, -1);
             tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel16.DefaultTextStyle.SuppressPartialLabels = true;
             tinyGeoFeatureLayer.ZoomLevelSet.ZoomLevel16.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;

@@ -1,7 +1,6 @@
 using System.IO;
 using Android.App;
 using Android.OS;
-using ThinkGeo.MapSuite.AndroidEdition;
 using ThinkGeo.MapSuite.Core;
 using Android.Widget;
 using ThinkGeo.MapSuite;

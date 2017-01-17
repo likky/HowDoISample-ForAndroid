@@ -4,7 +4,6 @@ using Android.Widget;
 using System.IO;
 using ThinkGeo.MapSuite;
 using ThinkGeo.MapSuite.Android;
-using ThinkGeo.MapSuite.AndroidEdition;
 using ThinkGeo.MapSuite.Core;
 using ThinkGeo.MapSuite.Layers;
 using ThinkGeo.MapSuite.Shapes;

@@ -1,19 +1,17 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using ThinkGeo.MapSuite.AndroidEdition;
-using ThinkGeo.MapSuite.Core;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text;
 using ThinkGeo.MapSuite;
 using ThinkGeo.MapSuite.Android;
+using ThinkGeo.MapSuite.Core;
 using ThinkGeo.MapSuite.Layers;
 using ThinkGeo.MapSuite.Shapes;
 

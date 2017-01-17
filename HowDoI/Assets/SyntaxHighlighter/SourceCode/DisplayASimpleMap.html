@@ -4,7 +4,7 @@
 using System.Drawing;\r\n
 using MonoTouch.UIKit;\r\n
 using ThinkGeo.MapSuite.Core;\r\n
-using ThinkGeo.MapSuite.AndroidEdition;\r\n\r\n
+using ThinkGeo.MapSuite.Android;\r\n\r\n
 namespace CSHowDoISamples\r\n
 {\r\n    
 public class DisplayASimpleMap :UIViewController\r\n   
@@ -24,7 +24,7 @@ public DisplayASimpleMap()\r\n
  LayerOverlay layerOverlay = new LayerOverlay();\r\n            
  iOSMap.Overlays.Add(layerOverlay);\r\n\r\n            
  ShapeFileFeatureLayer worldLayer = new ShapeFileFeatureLayer(\"AppData/SampleData/Countries02.shp\");\r\n           
- worldLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.Country1;\r\n           
+ worldLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.CreateSimpleAreaStyle(GeoColor.FromArgb(255, 233, 232, 214), GeoColor.FromArgb(255, 118, 138, 69));\r\n           
  worldLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;\r\n            
  layerOverlay.Layers.Add(worldLayer);\r\n\r\n            
  iOSMap.Refresh();\r\n           

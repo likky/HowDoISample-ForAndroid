@@ -5,7 +5,6 @@ using Android.Widget;
 using System.Collections.ObjectModel;
 using ThinkGeo.MapSuite;
 using ThinkGeo.MapSuite.Android;
-using ThinkGeo.MapSuite.AndroidEdition;
 using ThinkGeo.MapSuite.Core;
 using ThinkGeo.MapSuite.Drawing;
 using ThinkGeo.MapSuite.Layers;

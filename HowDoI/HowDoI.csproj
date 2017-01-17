@@ -26,7 +26,8 @@
     <AndroidStoreUncompressedFileExtensions />
     <JavaMaximumHeapSize />
     <JavaOptions />
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,9 +47,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidStoreUncompressedFileExtensions></AndroidStoreUncompressedFileExtensions>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
-    <JavaOptions></JavaOptions>
+    <AndroidStoreUncompressedFileExtensions>
+    </AndroidStoreUncompressedFileExtensions>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
+    <JavaOptions>
+    </JavaOptions>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GeoAPI, Version=1.7.4.0, Culture=neutral, PublicKeyToken=a1a0da7def465678, processorArchitecture=MSIL">
@@ -137,11 +141,13 @@
     <AndroidAsset Include="Assets\Source\AddVariousMapTools.cs" />
     <AndroidAsset Include="Assets\Source\AreaOfAFeature.cs" />
     <AndroidAsset Include="Assets\Source\BufferAFeature.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\ChangeEditSettings.cs" />
     <AndroidAsset Include="Assets\Source\ConvertToFromWellKnownBinary.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\CreateAnInMemoryFeatureLayer.cs" />
     <AndroidAsset Include="Assets\Source\DrawAFeatureBasedOnAValue.cs" />
@@ -150,19 +156,23 @@
     <AndroidAsset Include="Assets\Source\DrawThematicFeatures.cs" />
     <AndroidAsset Include="Assets\Source\EditFeaturesFromAFeatureLayer.cs" />
     <AndroidAsset Include="Assets\Source\EnvelopeOfAFeature.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\ExtentAndScaleChangeEvents.cs" />
     <AndroidAsset Include="Assets\Source\FindById.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\FindTheDifferenceOfTwoFeatures.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\FindWorldCoordinatesWhereTouched.cs" />
     <AndroidAsset Include="Assets\Source\GetDistanceBetweenTwoFeatures.cs" />
     <AndroidAsset Include="Assets\Source\LengthOfAFeature.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\LoadAGdiPlusRasterLayer.cs" />
     <AndroidAsset Include="Assets\Source\LoadAGeoTiffRasterLayer.cs" />
@@ -173,21 +183,25 @@
     <AndroidAsset Include="Assets\Source\LoadATabFeatureLayer.cs" />
     <AndroidAsset Include="Assets\Source\LoadATinyGeoFeatureLayer.cs" />
     <AndroidAsset Include="Assets\Source\ScaleFeatureUpAndDown.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\ScreenCoordinatesToWorldCoordinates.cs" />
     <AndroidAsset Include="Assets\Source\ShortestLineBetweenFeatures.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\SpatialQueryAFeatureLayer.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\UseWMSOverlay.cs" />
     <AndroidAsset Include="Assets\Source\UsingGoogle900913projection.cs" />
     <AndroidAsset Include="Assets\Source\WorldCoordinatesToScreenCoordinates.cs" />
     <AndroidAsset Include="Assets\Source\ZoomInToAFeatureTouched.cs" />
     <AndroidAsset Include="Assets\Source\ZoomIntoFeatures.cs">
-      <SubType></SubType>
+      <SubType>
+      </SubType>
     </AndroidAsset>
     <AndroidAsset Include="Assets\Source\ZoomToAScale.cs" />
     <AndroidAsset Include="Assets\Source\UseBingMapsOverlay.cs" />
@@ -451,7 +465,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\..\packages\ThinkGeo.MapSuite.10.0.0\build\Mono\ThinkGeo.MapSuite.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.10.0.0\build\Mono\ThinkGeo.MapSuite.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild"></Target>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+  </Target>
   <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.InMemory.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.InMemory.targets')" />
   <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.IsoLine.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.IsoLine.targets')" />
   <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Tab.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Tab.targets')" />

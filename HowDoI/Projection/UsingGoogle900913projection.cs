@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Widget;
 using ThinkGeo.MapSuite;
 using ThinkGeo.MapSuite.Android;
+using ThinkGeo.MapSuite.Drawing;
 using ThinkGeo.MapSuite.Layers;
 using ThinkGeo.MapSuite.Shapes;
 using ThinkGeo.MapSuite.Styles;
@@ -24,7 +25,7 @@ namespace CSHowDoISamples
             proj4Projection.ExternalProjectionParametersString = Proj4Projection.GetGoogleMapParametersString();
 
             ShapeFileFeatureLayer worldLayer = new ShapeFileFeatureLayer(SampleHelper.GetDataPath(@"SampleData/Countries02.shp"));
-            worldLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.Country1;
+            worldLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.CreateSimpleAreaStyle(GeoColor.FromArgb(255, 233, 232, 214), GeoColor.FromArgb(255, 118, 138, 69));
             worldLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
             worldLayer.FeatureSource.Projection = proj4Projection;
 
