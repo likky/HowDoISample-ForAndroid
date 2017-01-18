@@ -454,12 +454,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.10.0.0\build\Mono\ThinkGeo.MapSuite.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.10.0.0\build\Mono\ThinkGeo.MapSuite.targets')" />
+  <Import Project="..\packages\ThinkGeo.MapSuite.10.0.0\build\Mono\ThinkGeo.MapSuite.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.10.0.0\build\Mono\ThinkGeo.MapSuite.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild"></Target>
-  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.InMemory.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.InMemory.targets')" />
-  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.IsoLine.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.IsoLine.targets')" />
-  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Tab.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Tab.targets')" />
-  <Import Project="..\..\..\packages\ThinkGeo.MapSuite.Layers.Noaa.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Noaa.targets" Condition="Exists('..\..\..\packages\ThinkGeo.MapSuite.Layers.Noaa.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Noaa.targets')" />
+  <Import Project="..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.InMemory.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.Layers.InMemory.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.InMemory.targets')" />
+  <Import Project="..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.IsoLine.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.Layers.IsoLine.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.IsoLine.targets')" />
+  <Import Project="..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Tab.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.Layers.Tab.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Tab.targets')" />
+  <Import Project="..\packages\ThinkGeo.MapSuite.Layers.Noaa.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Noaa.targets" Condition="Exists('..\packages\ThinkGeo.MapSuite.Layers.Noaa.10.0.0\build\Mono\ThinkGeo.MapSuite.Layers.Noaa.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
