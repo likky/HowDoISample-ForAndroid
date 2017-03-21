@@ -9,7 +9,7 @@ The “How Do I?” samples collection is a comprehensive set containing dozens 
 ### Requirements
 This sample makes use of the following NuGet Packages
 
-[MapSuite 10.0.0.0](http:mapsuite.nuget)
+[MapSuite 10.0.0.0](https://www.nuget.org/packages?q=thinkgeo)
 
 ### About the Code
 
