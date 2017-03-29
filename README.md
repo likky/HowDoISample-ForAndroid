@@ -4,7 +4,7 @@
 
 The “How Do I?” samples collection is a comprehensive set containing dozens of interactive samples. Available in C#, these samples are designed to hit all the highlights of Map Suite, from simply adding a layer to a map to performing spatial queries and applying a thematic style. Consider this collection your “encyclopedia” of all the Map Suite basics and a great starting place for new users.
 
-Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf) for the details.
+Please refer to [Wiki](System.String[]) for the details.
 
 ![Screenshot](https://github.com/ThinkGeo/HowDoISample-ForAndroid/blob/master/ScreenShot.png)
 
