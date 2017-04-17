@@ -1,4 +1,4 @@
-# How DoI Sample for Android
+# How Do I Sample for Android
 
 ### Description
 
