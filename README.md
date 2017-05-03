@@ -15,22 +15,28 @@ This sample makes use of the following NuGet Packages
 
 ### About the Code
 
-Working...
+```csharp
+WorldMapKitOverlay layerOverlay = new WorldMapKitOverlay();
+
+androidMap = FindViewById<MapView>(Resource.Id.androidmap);
+androidMap.MapUnit = GeographyUnit.DecimalDegree;
+androidMap.CurrentExtent = new RectangleShape(-133.2515625, 89.2484375, 126.9046875, -88.290625);
+androidMap.Overlays.Add(layerOverlay);
+```
 
 ### Getting Help
 
-[Map Suite mobile for Android Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_mobile_for_android)
-
-[Map Suite mobile for Android Product Description](https://thinkgeo.com/ui-controls#mobile-platforms)
-
-[ThinkGeo Community Site](http://community.thinkgeo.com/)
-
-[ThinkGeo Web Site](http://www.thinkgeo.com)
+- [Map Suite mobile for Android Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_mobile_for_android)
+- [Map Suite mobile for Android Product Description](https://thinkgeo.com/ui-controls#mobile-platforms)
+- [ThinkGeo Community Site](http://community.thinkgeo.com/)
+- [ThinkGeo Web Site](http://www.thinkgeo.com)
 
 ### Key APIs
 This example makes use of the following APIs:
 
-Working...
+- [ThinkGeo.MapSuite.Android.MapView](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.android.mapview)
+- [ThinkGeo.MapSuite.Android.LayerOverlay](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.android.layeroverlay)
+- [ThinkGeo.MapSuite.Shapes.RectangleShape](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.shapes.rectangleshape)
 
 ### About Map Suite
 Map Suite is a set of powerful development components and services for the .Net Framework.
