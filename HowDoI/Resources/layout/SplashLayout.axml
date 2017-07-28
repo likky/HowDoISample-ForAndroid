@@ -46,7 +46,7 @@
                 android:layout_marginTop="-8dp"
                 android:textSize="30dp"
                 android:gravity="top"
-                android:text="Android Edition"
+                android:text="Mobile for Android"
                 android:lineSpacingExtra="0dp"
                 android:lineSpacingMultiplier="1" />
             <ProgressBar
